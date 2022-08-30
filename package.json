@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "server": "node server/index.js",
-    "clean": "node src/clear-output-dir.js",
+    "clean": "node scripts/clear-output-dir.js",
     "start": "yarn clean && node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }

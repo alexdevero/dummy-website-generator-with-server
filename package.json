@@ -4,6 +4,7 @@
     "url": "https://alexdevero.com"
   },
   "license": "MIT",
+  "private": false,
   "scripts": {
     "server": "node server/index.js",
     "clean": "node scripts/clear-output-dir.js",

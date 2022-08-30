@@ -1,12 +1,12 @@
 const pageTitle = 'My Page'
 
-const pageHead = (pageName) => `
+const pageHead = (pageName: string): string => `
 <head>
   <title>${pageName || pageTitle}</title>
 </head>
 `.trim()
 
-const pageBody = (pageName) => `
+const pageBody = (pageName: string): string => `
 <body>
   <header>
     <nav>
@@ -23,14 +23,10 @@ const pageBody = (pageName) => `
 </body>
 `.trim()
 
-const content = (pageName) => `
+export const content = (pageName: string): string => `
 <doctype html>
 <html>
 ${pageHead(pageName)}
 ${pageBody(pageName)}
 </html>
 `
-
-module.exports = {
-  content
-}
